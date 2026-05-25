@@ -1,0 +1,43 @@
+{
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://podshorts--gem-contractor-directory-api-api.modal.run",
+        "EXPO_PUBLIC_CONTACT_FORM_URL": "https://docs.google.com/forms/d/e/1FAIpQLSdfonI2S4C4OHuv7pfjQf738P0Lch3LJZVT0n3N0BV61NUTtQ/viewform?usp=dialog"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://podshorts--gem-contractor-directory-api-api.modal.run",
+        "EXPO_PUBLIC_CONTACT_FORM_URL": "https://docs.google.com/forms/d/e/1FAIpQLSdfonI2S4C4OHuv7pfjQf738P0Lch3LJZVT0n3N0BV61NUTtQ/viewform?usp=dialog"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./play-service-account.json",
+        "track": "internal"
+      }
+    }
+  }
+}

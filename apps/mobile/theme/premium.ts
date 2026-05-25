@@ -1,0 +1,20 @@
+/** Shared palette — minimal warm neutrals + one accent */
+export const premium = {
+  bg: "#faf8f4",
+  bgWarm: "#f4f0e8",
+  bgElevated: "#ffffff",
+  surface: "#ffffff",
+  surfaceMuted: "#f5f2ec",
+  ink: "#1c1917",
+  inkSoft: "#57534e",
+  inkFaint: "#a8a29e",
+  border: "rgba(28, 25, 23, 0.06)",
+  borderStrong: "rgba(28, 25, 23, 0.1)",
+  gold: "#b45309",
+  goldSoft: "#ea580c",
+  accent: "#0c4a6e",
+  success: "#15803d",
+  whatsapp: "#128C7E",
+  error: "#b91c1c",
+  shadow: "rgba(28, 25, 23, 0.08)",
+} as const;

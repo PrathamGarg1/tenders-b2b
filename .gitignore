@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.env
+*.pyc
+.DS_Store
+
+# Mobile
+apps/mobile/node_modules/
+apps/mobile/.expo/
+apps/mobile/dist/
+apps/mobile/.env
+apps/mobile/play-service-account.json
+
+# Data artifacts (never commit)
+*.parquet
+*.pdf
+modal_logs/
+modal_records/
+modal_rejects/
+modal_parquet/
